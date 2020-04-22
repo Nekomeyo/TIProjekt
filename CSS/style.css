@@ -1,5 +1,5 @@
-@import "compass/css3";
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +8,20 @@
 
 body {
     text-align: left;
-    font-family: Lato;
+    font-family: Josefin Sans;
     color: #fff;
     width: 100%;
+    background-color: rgb(253, 235, 221);
+}
+
+main {
+    top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .kontakt {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
     padding-left: 100px;
     padding-right: 100px;
     min-width: 85%;
@@ -24,20 +30,32 @@ body {
     position: fixed;
     justify-content: space-between;
     justify-items: center;
-    height: 45px;
+    height: 100px;
     z-index: 3;
-    background-color: chocolate;
-    opacity: 87%;
+    background-image: linear-gradient(to bottom, rgb(88, 88, 88), rgba(0, 0, 0, 0));
+    background-blend-mode: overlay;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: large;
+}
+
+.kontakt div:hover {
+    color: honeydew;
+    text-shadow: 0 0 0.2em rgb(0, 0, 0), 0 0 0.1em rgb(0, 0, 0);
+}
+
+.kontakt div a:hover {
+    color: honeydew;
+    text-shadow: 0 0 0.2em rgb(2, 2, 2), 0 0 0.1em rgb(0, 0, 0);
 }
 
 .kontakt .K {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .tytul {
-    padding-top: 80px;
+    top: 0;
+    position: relative;
+    padding-top: 0px;
     width: 100%;
 }
 
@@ -69,18 +87,23 @@ body {
     display: block;
     padding: 21px 21px;
     border-radius: 5px 5px 0 0;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     font-weight: bolder;
 }
 
+.tabs label:hover {
+    color: honeydew;
+    text-shadow: 0 0 0.3em rgb(0, 0, 0), 0 0 0.3em rgb(0, 0, 0);
+}
+
 .tab-content {
     z-index: 2;
     display: none;
     overflow: hidden;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 25px;
     padding-left: 150px;
     padding-right: 150px;
@@ -101,6 +124,11 @@ body {
     display: block;
 }
 
+.Plista {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .Atytul {
     font-size: 25px;
 }
@@ -112,25 +140,56 @@ body {
 .A p {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+img:hover {
+    opacity: 80%;
+}
+
+.tytul img:hover {
+    opacity: 1;
 }
 
 .arch-content {
-    font-size: 17px;
-    line-height: 25px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    margin-top: 0;
-    position: sticky;
-    top: 53px;
-    left: 0;
-    right: 0;
-    background-color: cornflowerblue;
-    display: flex;
+    font-size: 20px;
+    width: 100%;
+    background-color: rgb(108, 152, 235);
+    display: block;
+}
+
+.data {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .Archtytul {
-    text-align: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+    font-size: larger;
+}
+
+.data p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.ArchJa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: chocolate;
+    font-size: large;
 }
