@@ -156,26 +156,29 @@ img:hover {
 }
 
 .arch-content {
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
-    background-color: rgb(108, 152, 235);
-    display: block;
-}
-
-.data {
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    display: flexbox;
+    flex-direction: column;
 }
 
 .Archtytul {
-    display: block;
+    display: flex;
     position: absolute;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding-top: 50px;
-    font-size: larger;
+    padding-bottom: 80px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.data {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .data p {
@@ -183,13 +186,50 @@ img:hover {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    text-align: justify;
+    height: auto;
+}
+
+.imgfloatleft {
+    float: left;
+    padding: 10px;
+}
+
+.imgfloatright {
+    float: right;
+    padding: 10px;
 }
 
 .ArchJa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: chocolate;
+    display: block;
+    text-align: center;
+    height: 80px;
+    background-image: linear-gradient(to top, rgb(88, 88, 88), rgba(0, 0, 0, 0));
+    background-blend-mode: overlay;
     font-size: large;
+    z-index: 3;
+}
+
+.gal-content {
+    font-size: 18px;
+    width: 100%;
+    line-height: 25px;
+}
+
+.gal-data {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.Galtytul {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 25px;
+    font-weight: bolder;
 }
