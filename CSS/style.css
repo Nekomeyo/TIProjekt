@@ -22,17 +22,16 @@ main {
 
 .kontakt {
     padding-top: 15px;
-    padding-left: 100px;
-    padding-right: 100px;
-    min-width: 85%;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     position: fixed;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     justify-items: center;
-    height: 100px;
+    height: 70px;
     z-index: 3;
-    background-image: linear-gradient(to bottom, rgb(88, 88, 88), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgb(65, 64, 64), rgba(0, 0, 0, 0));
+    text-shadow: 0 0 0.2em rgb(250, 245, 245), 0 0 0.1em rgb(243, 236, 236);
     background-blend-mode: overlay;
     font-weight: bolder;
     font-size: large;
@@ -56,6 +55,8 @@ main {
     top: 0;
     position: relative;
     padding-top: 0px;
+    margin: 0px;
+    ;
     width: 100%;
 }
 
@@ -67,7 +68,6 @@ main {
     list-style: none;
     position: relative;
     text-align: center;
-    margin: 0px;
 }
 
 .tabs li {
@@ -105,8 +105,8 @@ main {
     overflow: hidden;
     font-size: 18px;
     line-height: 25px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
     padding-top: 100px;
     padding-bottom: 100px;
     position: absolute;
@@ -129,8 +129,18 @@ main {
     font-size: 20px;
 }
 
+.Plista a:hover {
+    color: honeydew;
+    text-shadow: 0 0 0.2em rgb(2, 2, 2), 0 0 0.1em rgb(0, 0, 0);
+}
+
 .Atytul {
     font-size: 25px;
+}
+
+.Atytul a:hover {
+    color: honeydew;
+    text-shadow: 0 0 0.2em rgb(2, 2, 2), 0 0 0.1em rgb(0, 0, 0);
 }
 
 .A {
@@ -160,6 +170,7 @@ img:hover {
     width: 100%;
     display: flexbox;
     flex-direction: column;
+    line-height: 25px;
 }
 
 .Archtytul {
@@ -168,8 +179,6 @@ img:hover {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding-top: 50px;
-    padding-bottom: 80px;
     font-size: 25px;
     font-weight: bolder;
 }
@@ -179,6 +188,7 @@ img:hover {
     padding-top: 50px;
     padding-left: 200px;
     padding-right: 200px;
+    padding-bottom: 40px;
 }
 
 .data p {
@@ -188,6 +198,9 @@ img:hover {
     margin-inline-end: 0px;
     text-align: justify;
     height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 
 .imgfloatleft {
