@@ -11,7 +11,7 @@ body {
     font-family: Josefin Sans;
     color: #fff;
     width: 100%;
-    background-color: rgb(253, 235, 221);
+    background-color: #FDF2E9;
 }
 
 main {
@@ -74,7 +74,7 @@ main {
     float: center;
     display: block;
     width: 100%;
-    background-color: chocolate;
+    background-color: #dc7633;
 }
 
 .tabs input[type="radio"] {
@@ -217,7 +217,6 @@ img:hover {
     display: block;
     text-align: center;
     height: 80px;
-    background-image: linear-gradient(to top, rgb(88, 88, 88), rgba(0, 0, 0, 0));
     background-blend-mode: overlay;
     font-size: large;
     z-index: 3;

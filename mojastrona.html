@@ -3,19 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Czarna Sędz.">
+    <meta name="description" content="Kontakt do mnie">
     <title>Eve</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/mystyle.css" type="text/css" />
 </head>
 
 <body>
 
-    <header>
+    <div class="wrapper">
+        <h2>Masz jakąś sugestię? Napisz do mnie :D</h2>
+        <div id="error_message">
 
-    </header>
-    <main>
+        </div>
+        <form action="" id="myform" onsubmit="return validate();">
+            <div class="input_field">
+                <input type="text" placeholder="Wpisz swoje imię" id="name">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input_field">
+                <textarea placeholder="Co chcesz mi przekazać?" id="message"></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 
-    </main>
 </body>
 
 </html>
